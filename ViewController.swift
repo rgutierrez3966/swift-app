@@ -3,7 +3,7 @@
 //  iLikeTurtles
 //
 //  Created by Raul Gutierrez on 1/24/17.
-//  Copyright © 2017 Raul Gutierrez. All rights reserved.
+//  Copyright © 2017 Raul Gutierrez. All rights reserved..
 //
 
 import UIKit
@@ -12,16 +12,17 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var theLabel: UILabel!
 
-    var tapCount = 0
+    @IBOutlet weak var text1: UITextField!
+    
+    
+    @IBOutlet weak var text2: UITextField!
+    
+    
     
     @IBAction func pushBottonTap(_ sender: Any) {
         
         
-    tapCount = tapCount + 1
-        
-        if tapCount >= 10{
-        theLabel.text = "You tapped the buttom 10 times"
-    }
+       theLabel.text = " The Anwser: \( Double(text1.text!)! + Double(text2.text!)! )"
         
     }
 
