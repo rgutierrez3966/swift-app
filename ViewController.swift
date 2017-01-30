@@ -21,9 +21,13 @@ class ViewController: UIViewController {
     
     @IBAction func pushBottonTap(_ sender: Any) {
         
+        let addition = true
         
-       theLabel.text = " The Anwser: \( Double(text1.text!)! + Double(text2.text!)! )"
-        
+        if addition {
+            theLabel.text = " The Anwser: \( Double(text1.text!)! + Double(text2.text!)! )"
+        } else {
+            theLabel.text = " The Anwser: \( Double(text1.text!)! - Double(text2.text!)! )"
+        }
     }
 
     override func viewDidLoad()
